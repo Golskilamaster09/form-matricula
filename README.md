@@ -43,4 +43,31 @@ CSS Customization: Estilização personalizada de componentes nativos como radio
 
 [x] Design Responsivo: Adaptação suave para dispositivos móveis, tablets e telas desktop.
 
+🚀 Como Executar Localmente
+
+Pré-requisitos
+
+Para rodar o projeto, você só precisa de um navegador moderno instalado na sua máquina.
+
+Passo a passo
+
+# 1. Clone o repositório
+git clone https://github.com/Golskilamaster09/form-matricula.git
+
+# 2. Acesse a pasta do projeto
+cd form-matricula
+
+# 3. Abra o arquivo index.html no navegador
+# No Windows:
+start index.html
+
+# No Linux:
+xdg-open index.html
+
+# No macOS:
+open index.html
+
+
+(Ou utilize a extensão Live Server no VS Code para rodar localmente com recarregamento automático).
+
 
