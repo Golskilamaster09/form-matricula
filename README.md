@@ -10,8 +10,7 @@ O objetivo foi trabalhar na prática a estilização e personalização de compo
 
 🌐 Demonstração
 
-🔗 Acesse online: https://vercel.com/new/luiz-eduardos-projects-63821ed4/success?auto-redirect=true&developer-id=&external-id=&redirect-url=&branch=main&deploymentUrl=form-matricula-f6rxb7c75-luiz-eduardos-projects-63821ed4.vercel.app&projectName=form-matricula&s=https%3A%2F%2Fgithub.com%2FGolskilamaster09%2Fform-matricula&gitOrgLimit=&hasTrialAvailable=1&totalProjects=1&flow-id=jcWuAbghG20meFrK8xytc&teamSlug=luiz-eduardos-projects-63821ed4
-
+🔗 Acesse online: https://form-matricula.vercel.app
 🛠️ Tecnologias Utilizadas
 
 HTML5: Estruturação semântica (<fieldset>, <legend>, <input>, <select>, <textarea>).
