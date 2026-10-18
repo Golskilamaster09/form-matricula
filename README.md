@@ -16,21 +16,31 @@ O objetivo foi trabalhar na prática a estilização e personalização de compo
 
 HTML5: Estruturação semântica (<fieldset>, <legend>, <input>, <select>, <textarea>).
 
+
 CSS3: Flexbox, CSS Grid, estilização avançada de pseudo-classes (:focus, :hover, :checked, :has()) e responsividade com Media Queries.
+
 
 CSS Customization: Estilização personalizada de componentes nativos como radio buttons, checkboxes, custom file upload (dropzone) e seletores de data.
 
+
 ✨ Funcionalidades e Seções
+
 
 [x] Dados da Criança: Nome completo, data de nascimento, gênero (seleção customizada) e informações médicas/alergias.
 
+
 [x] Endereço Residencial: CEP, logradouro, número, complemento, bairro e cidade/estado.
+
 
 [x] Dados do Responsável: Nome, telefone de emergência, e-mail e parentesco.
 
+
 [x] Opções de Matrícula: Seleção de turno (matutino/vespertino) e atividades extracurriculares.
+
 
 [x] Upload de Documentos: Campo de anexos em estilo dropzone para envio da certidão de nascimento e carteira de vacinação.
 
+
 [x] Design Responsivo: Adaptação suave para dispositivos móveis, tablets e telas desktop.
+
 
