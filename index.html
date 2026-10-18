@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Preencha o formulário de matrícula da escola Estrelas do Amanhã."
+    />
+    <title>Formulário de matrícula | Estrelas do Amanhã</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Assets/styles/style.css" />
+  </head>
+  <body>
+    <main class="enrollment">
+      <section class="form-panel" aria-labelledby="form-title">
+        <a
+          class="back-link"
+          href="#"
+          aria-label="Voltar para a página anterior"
+        >
+          <img src="Assets/imgs/arrow-left-02.png" alt="" />
+          Voltar
+        </a>
+
+        <header class="form-header">
+          <h1 id="form-title">Formulário de matrícula</h1>
+          <p>
+            Preencha os dados abaixo para matricular seu filho na escola de
+            educação infantil Estrelas do Amanhã.
+          </p>
+        </header>
+
+        <form action="#" method="post">
+          <fieldset class="form-section">
+            <legend>Informações da criança</legend>
+
+            <label class="field">
+              <span>Nome completo</span>
+              <input
+                type="text"
+                name="child-name"
+                placeholder="Digite o nome completo"
+                autocomplete="name"
+                required
+              />
+            </label>
+
+            <label class="field">
+              <span>Data de nascimento</span>
+              <input type="date" name="birth-date" required />
+            </label>
+
+            <label class="field">
+              <span>Sexo</span>
+              <span class="select-wrap">
+                <select name="gender" required>
+                  <option value="" selected disabled>
+                    Selecione uma opção
+                  </option>
+                  <option value="feminino">Feminino</option>
+                  <option value="masculino">Masculino</option>
+                  <option value="nao-informar">Prefiro não informar</option>
+                </select>
+                <img src="Assets/imgs/arrow-down-01.png" alt="" />
+              </span>
+            </label>
+
+            <label class="field">
+              <span>Informações médicas</span>
+              <textarea
+                name="medical-information"
+                rows="4"
+                placeholder="Descreva alergias, restrições ou outras informações importantes"
+              ></textarea>
+            </label>
+
+            <label class="field">
+              <span>Certidão de nascimento</span>
+              <span class="upload-area">
+                <input
+                  type="file"
+                  name="birth-certificate"
+                  accept=".pdf,image/*"
+                  aria-label="Selecionar certidão de nascimento"
+                />
+                <img src="Assets/imgs/cloud-upload.png" alt="" />
+                <span>Clique aqui para<br />selecionar arquivos</span>
+              </span>
+            </label>
+          </fieldset>
+
+          <fieldset class="form-section">
+            <legend>Endereço residencial</legend>
+
+            <label class="field">
+              <span>CEP</span>
+              <input
+                type="number"
+                name="postal-code"
+                placeholder="00000-000"
+                autocomplete="postal-code"
+                inputmode="numeric"
+                required
+              />
+            </label>
+
+            <div class="field-grid">
+              <label class="field">
+                <span>Rua</span>
+                <input
+                  type="text"
+                  name="street"
+                  placeholder="Nome da rua"
+                  autocomplete="address-line1"
+                  required
+                />
+              </label>
+              <label class="field">
+                <span>Número</span>
+                <input
+                  type="text"
+                  name="house-number"
+                  placeholder="Nº"
+                  inputmode="numeric"
+                  required
+                />
+              </label>
+              <label class="field">
+                <span>Cidade</span>
+                <input
+                  type="text"
+                  name="city"
+                  placeholder="Sua cidade"
+                  autocomplete="address-level2"
+                  required
+                />
+              </label>
+              <label class="field">
+                <span>Estado</span>
+                <input
+                  type="text"
+                  name="state"
+                  placeholder="UF"
+                  autocomplete="address-level1"
+                  maxlength="2"
+                  required
+                />
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-section">
+            <legend>Informações do responsável</legend>
+
+            <label class="field">
+              <span>Nome do responsável</span>
+              <input
+                type="text"
+                name="guardian-name"
+                placeholder="Digite o nome completo"
+                autocomplete="name"
+                required
+              />
+              <small>Principal responsável legal e contato de emergência</small>
+            </label>
+
+            <label class="field">
+              <span>Telefone</span>
+              <input
+                type="number"
+                name="phone"
+                placeholder="(00) 00000-0000"
+                autocomplete="tel"
+                required
+              />
+            </label>
+
+            <label class="field">
+              <span>E-mail</span>
+              <input
+                type="email"
+                name="email"
+                placeholder="seu@email.com"
+                autocomplete="email"
+                required
+              />
+            </label>
+          </fieldset>
+
+          <fieldset class="form-section enrollment-options">
+            <legend>Opções de matrícula</legend>
+            <p class="field-hint">Selecione o turno de estudo</p>
+
+            <div class="choice-grid shifts">
+              <label class="choice-card shift-card">
+                <input
+                  type="radio"
+                  name="shift"
+                  value="manha"
+                  checked
+                  required
+                />
+                <span class="radio-indicator"></span>
+                <img src="Assets/imgs/sun-cloud-02.png" alt="" />
+                <span>Manhã</span>
+              </label>
+              <label class="choice-card shift-card">
+                <input type="radio" name="shift" value="tarde" />
+                <span class="radio-indicator"></span>
+                <img src="Assets/imgs/sun-02.png" alt="" />
+                <span>Tarde</span>
+              </label>
+            </div>
+
+            <p class="field-hint sport-hint">
+              Em qual esporte você gostaria de inscrever seu filho?
+            </p>
+            <div class="choice-grid sports">
+              <label class="choice-card sport-card sport-violet">
+                <input type="checkbox" name="sports" value="futebol" />
+                <span class="radio-indicator"></span>
+                <img src="Assets/imgs/football.png" alt="" />
+                <span>Futebol</span>
+              </label>
+              <label class="choice-card sport-card sport-orange">
+                <input type="checkbox" name="sports" value="basquete" />
+                <span class="radio-indicator"></span>
+                <img src="Assets/imgs/basketball-02.png" alt="" />
+                <span>Basquete</span>
+              </label>
+              <label class="choice-card sport-card sport-blue">
+                <input type="checkbox" name="sports" value="natacao" checked />
+                <span class="radio-indicator"></span>
+                <img src="Assets/imgs/swimming.png" alt="" />
+                <span>Natação</span>
+              </label>
+              <label class="choice-card sport-card sport-green">
+                <input type="checkbox" name="sports" value="yoga" />
+                <span class="radio-indicator"></span>
+                <img src="Assets/imgs/yoga-02.png" alt="" />
+                <span>Yoga</span>
+              </label>
+              <label class="choice-card sport-card sport-yellow">
+                <input type="checkbox" name="sports" value="volei" />
+                <span class="radio-indicator"></span>
+                <img src="Assets/imgs/volleyball.png" alt="" />
+                <span>Vôlei</span>
+              </label>
+              <label class="choice-card sport-card sport-pink">
+                <input type="checkbox" name="sports" value="luta" />
+                <span class="radio-indicator"></span>
+                <img src="Assets/imgs/boxing-glove-01.png" alt="" />
+                <span>Luta</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <label class="terms">
+            <input type="checkbox" name="terms" required />
+            <span>
+              Declaro que li e concordo com os
+              <a href="#">Termos e Condições</a> e com a
+              <a href="#">Política de Privacidade</a> da escola Estrelas do
+              Amanhã.
+            </span>
+          </label>
+
+          <div class="form-actions">
+            <button class="button button-secondary" type="button">
+              Salvar respostas
+            </button>
+            <button class="button button-primary" type="disable">
+              Fazer matrícula
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <aside class="promo-panel" aria-labelledby="promo-title">
+        <div class="school-brand">
+          <span class="brand-sparkle" aria-hidden="true">✦</span>
+          Estrelas do Amanhã
+        </div>
+        <h2 id="promo-title">
+          Porque cada momento de <span>aprendizado</span> conta
+        </h2>
+        <p>
+          Inscreva seu filho em nossa escola e veja-o florescer em um ambiente
+          acolhedor, seguro e estimulante.
+        </p>
+        <img
+          class="promo-illustration"
+          src="Assets/imgs/pana.png"
+          alt="Crianças aprendendo juntas em uma sala de aula"
+        />
+      </aside>
+    </main>
+  </body>
+</html>
